@@ -1,0 +1,144 @@
+# Macro for text with lf endings
+[attr]text-lf         text eol=lf
+
+# Macro for Unity YAML-based asset files.
+[attr]unity-yaml      text-lf diff merge=unityyamlmerge
+
+# Macro for all binary files that should use Git LFS.
+[attr]binary-lfs      -text filter=lfs diff=lfs merge=lfs
+
+
+#################### GENERAL ####################
+
+.gitattributes        text diff merge
+.gitignore            text diff merge
+*.md                  text diff=markdown merge
+
+#################### END OF GENERAL ####################
+
+
+#################### UNITY ####################
+
+*.cginc               text diff merge
+*.cs                  text diff=csharp merge
+*.shader              text diff merge
+*.plist               text-lf diff merge
+*.asmdef              text-lf diff merge
+*.asmref              text-lf diff merge
+/*/ProjectSettings/** text-lf diff merge
+
+# Unity YAML
+*.mat                 unity-yaml
+*.anim                unity-yaml
+*.unity               unity-yaml
+*.prefab              unity-yaml
+*.meta                unity-yaml
+*.controller          unity-yaml
+*.physicMaterial2D    unity-yaml
+*.physicMaterial      unity-yaml
+*.physicsMaterial2D   unity-yaml
+*.physicsMaterial     unity-yaml
+*.spriteatlas         unity-yaml
+*.asset               -text diff merge
+
+#################### END OF UNITY ####################
+
+
+#################### LFS ####################
+
+# Unity LFS
+*.cubemap             binary-lfs
+*.unitypackage        binary-lfs
+
+# Images
+*.bmp                 binary-lfs
+*.exr                 binary-lfs
+*.gif                 binary-lfs
+*.hdr                 binary-lfs
+*.iff                 binary-lfs
+*.jpeg                binary-lfs
+*.jpg                 binary-lfs
+*.pict                binary-lfs
+*.png                 binary-lfs
+*.psd                 binary-lfs
+*.tga                 binary-lfs
+*.tif                 binary-lfs
+*.tiff                binary-lfs
+*.webp                binary-lfs
+*.ai                  binary-lfs
+
+# Audio
+*.aif                 binary-lfs
+*.aiff                binary-lfs
+*.it                  binary-lfs
+*.mod                 binary-lfs
+*.mp3                 binary-lfs
+*.ogg                 binary-lfs
+*.s3m                 binary-lfs
+*.wav                 binary-lfs
+*.xm                  binary-lfs
+
+# Video
+*.asf                 binary-lfs
+*.avi                 binary-lfs
+*.flv                 binary-lfs
+*.mov                 binary-lfs
+*.mp4                 binary-lfs
+*.mpeg                binary-lfs
+*.mpg                 binary-lfs
+*.ogv                 binary-lfs
+*.wmv                 binary-lfs
+
+# 3D models
+*.3dm                 binary-lfs
+*.3ds                 binary-lfs
+*.blend               binary-lfs
+*.c4d                 binary-lfs
+*.collada             binary-lfs
+*.dae                 binary-lfs
+*.dxf                 binary-lfs
+*.[Ff][Bb][Xx]        binary-lfs
+*.jas                 binary-lfs
+*.lws                 binary-lfs
+*.lxo                 binary-lfs
+*.ma                  binary-lfs
+*.max                 binary-lfs
+*.mb                  binary-lfs
+*.obj                 binary-lfs
+*.ply                 binary-lfs
+*.skp                 binary-lfs
+*.stl                 binary-lfs
+*.ztl                 binary-lfs
+
+# Compressed Archive
+*.7z                  binary-lfs
+*.bz2                 binary-lfs
+*.gz                  binary-lfs
+*.rar                 binary-lfs
+*.tar                 binary-lfs
+*.zip                 binary-lfs
+
+# Compiled Dynamic Library
+*.dll                 binary-lfs
+*.pdb                 binary-lfs
+*.so                  binary-lfs
+
+# Fonts
+*.otf                 binary-lfs
+*.ttf                 binary-lfs
+
+# Executable/Installer
+*.exe                 binary-lfs
+
+# Documents
+*.pdf                 binary-lfs
+
+# Spine export file for Unity
+*.skel.bytes          binary-lfs
+
+# ETC
+*.a                   binary-lfs
+*.rns                 binary-lfs
+*.reason              binary-lfs
+
+#################### END OF LFS ####################
