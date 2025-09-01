@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/USS/PuzzleGame.uss?fileID=7433441132597879392&amp;guid=f51cef7d14fa7eb4fb24f38d5d55fe5c&amp;type=3#PuzzleGame" />
+    <ui:VisualElement name="preview-container" style="justify-content: space-around;">
+        <ui:VisualElement name="difficulty-container" class="difficulty-container" style="height: 16%; margin-bottom: 2%; flex-wrap: nowrap;">
+        </ui:VisualElement>
+        <ui:VisualElement name="footer" class="footer">
+            <ui:Button text="Play" name="play-button" double-click-selects-word="false" triple-click-selects-line="false" display-tooltip-when-elided="false" emoji-fallback-support="false" enable-rich-text="false" class="play-button" style="font-size: 50px; height: auto; flex-grow: 1; flex-shrink: 0;">
+                <ui:VisualElement name="play-icon" class="play-coin-icon" />
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

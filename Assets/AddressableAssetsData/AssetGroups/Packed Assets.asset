@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Packed Assets
+  m_EditorClassIdentifier: 
+  m_GroupName: Packed Assets
+  m_GUID: a4b247ced5c6db14d8fbec9586273324
+  m_SerializeEntries:
+  - m_GUID: 5db5c391d2185e745a06499ab3d8b97c
+    m_Address: Assets/ConfigData/GameConfig.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - config
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d19e652b5533d394cbff88c17448c66f
+    m_Address: Assets/Images/ads-icon.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ads-icon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f34ee8cbc22490d4697ae5e5cb2df5bf
+    m_Address: Assets/Images/coin.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - coin
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: fb060ade8982c8740a8d2a9ef308fba4, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 179cb55d705f754439c3a444b65e2fb1, type: 2}
+    - {fileID: 11400000, guid: bdbd3c4924362d746933cc01fdc14d64, type: 2}

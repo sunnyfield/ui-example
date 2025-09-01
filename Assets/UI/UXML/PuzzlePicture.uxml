@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/USS/PuzzleGame.uss?fileID=7433441132597879392&amp;guid=f51cef7d14fa7eb4fb24f38d5d55fe5c&amp;type=3#PuzzleGame" />
+    <ui:VisualElement name="puzzle-container" class="puzzle-container" style="margin-bottom: 2%; flex-grow: 1;">
+        <ui:VisualElement name="puzzle-grid" class="puzzle-grid" />
+    </ui:VisualElement>
+</ui:UXML>

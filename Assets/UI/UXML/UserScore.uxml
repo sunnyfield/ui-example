@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/USS/PuzzleGame.uss?fileID=7433441132597879392&amp;guid=f51cef7d14fa7eb4fb24f38d5d55fe5c&amp;type=3#PuzzleGame" />
+    <ui:VisualElement name="header" class="header" style="top: auto; right: auto; position: relative; width: 100%; justify-content: flex-end; margin-bottom: 10px;">
+        <ui:VisualElement name="score-container" class="score-container" style="padding-right: 20px; padding-top: 10px; padding-left: 20px; padding-bottom: 10px; align-items: center; flex-grow: 0;">
+            <ui:VisualElement name="coin-icon" class="coin-icon" style="margin-right: 5%;" />
+            <ui:Label name="score-label" class="score-text" style="width: auto; display: flex; font-size: 50%;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

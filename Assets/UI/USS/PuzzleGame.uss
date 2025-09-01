@@ -1,0 +1,228 @@
+.root-container {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 6%;
+    padding-right: 6%;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background-color: rgb(31, 31, 31);
+    flex-wrap: nowrap;
+    align-content: flex-start;
+}
+
+.header {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-shrink: 0;
+    margin-bottom: 4%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    bottom: auto;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+}
+
+.score-container {
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    right: auto;
+    flex-wrap: nowrap;
+    left: auto;
+    justify-content: flex-start;
+    align-content: flex-start;
+    -unity-background-scale-mode: stretch-to-fill;
+    align-self: auto;
+    max-width: none;
+    flex-grow: 0;
+    min-width: auto;
+}
+
+.coin-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    flex-shrink: 0;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.score-text {
+    font-size: 28px;
+    color: white;
+    -unity-font-style: bold;
+    margin: 0;
+    padding: 0;
+    white-space: normal;
+    text-overflow: clip;
+}
+
+.game-area {
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: auto;
+    height: auto;
+}
+
+.puzzle-container {
+    flex-shrink: 0;
+    margin-bottom: 6%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.puzzle-grid {
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    padding: 8px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    background-position: center;
+    flex-grow: 1;
+    align-items: center;
+    flex-shrink: 0;
+    background-image: url("project://database/Assets/Images/puzzle_image.png?fileID=2800000&guid=e2558ead863111c4081d5f3e308d0052&type=3#puzzle_image");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.difficulty-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 4%;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.difficulty-button {
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    border-width: 2px;
+    border-radius: 25px;
+    color: white;
+    font-size: 100%;
+    -unity-font-style: bold;
+    margin: 8px;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -unity-text-align: middle-center;
+    flex-grow: 1;
+    align-self: auto;
+    align-content: flex-start;
+    background-size: 100% 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    margin-top: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    flex-shrink: 1;
+    min-width: 10%;
+    min-height: 42%;
+}
+
+.difficulty-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.difficulty-selected {
+    background-color: rgb(70, 130, 180);
+    border-color: rgb(100, 160, 210);
+    color: white;
+}
+
+.difficulty-selected:hover {
+    background-color: rgb(90, 150, 200);
+    border-color: rgb(120, 180, 230);
+}
+
+.footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    position: relative;
+    height: 10%;
+    flex-grow: 0;
+    width: 100%;
+}
+
+.play-button {
+    width: auto;
+    height: auto;
+    background-color: rgb(0, 180, 80);
+    border-color: rgb(0, 200, 90);
+    border-width: 3px;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    -unity-font-style: bold;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+    overflow: visible;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 90px;
+    min-width: 358px;
+    min-height: 90px;
+}
+
+.play-button:hover {
+    background-color: rgb(0, 200, 90);
+    border-color: rgb(0, 220, 100);
+}
+
+.play-coin-icon {
+    width: 20%;
+    height: 35%;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 12px;
+    position: absolute;
+    bottom: -7%;
+    right: -7%;
+    -unity-background-scale-mode: scale-to-fit;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="UserScore" src="project://database/Assets/UI/UXML/UserScore.uxml?fileID=9197481963319205126&amp;guid=812dd292e649d624c8c0c7b03209bcfe&amp;type=3#UserScore" />
+    <ui:Template name="PuzzlePicture" src="project://database/Assets/UI/UXML/PuzzlePicture.uxml?fileID=9197481963319205126&amp;guid=4224e05a0216ea54786b68ca67b1915e&amp;type=3#PuzzlePicture" />
+    <ui:Template name="PuzzlePreview" src="project://database/Assets/UI/UXML/PuzzlePreview.uxml?fileID=9197481963319205126&amp;guid=158641940dca5a84a9644667a26a902d&amp;type=3#PuzzlePreview" />
+    <Style src="project://database/Assets/UI/USS/PuzzleGame.uss?fileID=7433441132597879392&amp;guid=f51cef7d14fa7eb4fb24f38d5d55fe5c&amp;type=3#PuzzleGame" />
+    <ui:VisualElement name="root" class="root-container" style="justify-content: flex-start; align-items: stretch;">
+        <ui:Instance template="UserScore" name="Header" style="right: 0; top: auto;" />
+        <ui:Instance template="PuzzlePicture" name="PuzzlePicture" style="flex-grow: 1; display: none;" />
+        <ui:Instance template="PuzzlePreview" name="PuzzlePreview" style="display: none;" />
+    </ui:VisualElement>
+</ui:UXML>
